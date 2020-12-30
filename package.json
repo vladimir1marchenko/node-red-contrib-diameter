@@ -1,6 +1,6 @@
 {
   "name": "nodered-contrib-diameter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Diameter protocol for Node RED",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,11 @@
   ],
   "author": "Vladimir Marchenko",
   "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "diameter-dictionary": "^1.0.0",
+    "bluebird": "^3.6.0"
+  }
   "node-red" : {
         "nodes": {
           "diameter-request": "diameter-client-request.js",
