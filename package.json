@@ -17,7 +17,7 @@
     "lodash": "^4.17.15",
     "diameter-dictionary": "^1.0.0",
     "bluebird": "^3.6.0"
-  }
+  },
   "node-red" : {
         "nodes": {
           "diameter-request": "diameter-client-request.js",
