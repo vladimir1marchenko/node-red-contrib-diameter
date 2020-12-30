@@ -1,0 +1,39 @@
+<script type="text/javascript">
+  RED.nodes.registerType('diameter-client', {
+    category: 'config',
+    defaults: {
+      port: {value: 3868, required: true, validate: RED.validators.number()},
+      host: {value: '10.222.23.10', required: true},
+      origin_host: {value: 'test.script.node.epc.mnc020.mcc250.3gppnetwork.org', required: true},
+      origin_realm: {value: 'node.epc.mnc020.mcc250.3gppnetwork.org', required: true},
+      auth_application_id: {value: 16777238, required: true, validate: RED.validators.number()}
+    },
+    label: function() {
+      return this.host + ':' + this.port
+    },
+  })
+</script>
+
+<script type="text/x-red" data-template-name="diameter-client">
+  <div class="form-row">
+      <label for="node-config-input-host"><i class="icon-bookmark"></i> Host</label>
+      <input type="text" id="node-config-input-host">
+  </div>
+  <div class="form-row">
+      <label for="node-config-input-port"><i class="icon-bookmark"></i> Port</label>
+      <input type="text" id="node-config-input-port">
+  </div>
+  <div class="form-row">
+      <label for="node-config-input-origin_host"><i class="icon-bookmark"></i> Origin Host</label>
+      <input type="text" id="node-config-input-origin_host">
+  </div>
+  <div class="form-row">
+      <label for="node-config-input-origin_realm"><i class="icon-bookmark"></i> Origin Realm</label>
+      <input type="text" id="node-config-input-origin_realm">
+  </div>
+  <div class="form-row">
+      <label for="node-config-input-auth_application_id"><i class="icon-bookmark"></i> Application Id</label>
+      <input type="text" id="node-config-input-auth_application_id">
+  </div>
+
+</script>

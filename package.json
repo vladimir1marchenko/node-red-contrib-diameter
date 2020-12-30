@@ -1,0 +1,23 @@
+{
+  "name": "nodered-contrib-diameter",
+  "version": "0.0.1",
+  "description": "Diameter protocol for Node RED",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "diameter",
+    "nodered"
+  ],
+  "author": "Vladimir Marchenko",
+  "license": "ISC",
+  "node-red" : {
+        "nodes": {
+          "diameter-request": "diameter-client-request.js",
+          "diameter-client": "diameter-client.js",
+          "diameter-server": "diameter-server.js",
+          "diameter-server-listener": "diameter-server-listener.js"
+        }
+    }
+}

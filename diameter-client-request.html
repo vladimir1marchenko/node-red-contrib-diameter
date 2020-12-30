@@ -1,0 +1,31 @@
+<script type="text/javascript">
+  RED.nodes.registerType('diameter-client-request', {
+    category: 'diameter',
+    color: '#a6bbcf',
+    defaults: {
+      client: {value: '', type: 'diameter-client'},
+      name: {value: ''},
+    },
+    inputs: 1,
+    outputs: 2,
+    icon: 'file.png',
+    label: function() {
+      return this.name || 'DiameterClientRequest'
+    },
+  })
+</script>
+
+<script type="text/x-red" data-template-name="diameter-client-request">
+  <div class="form-row">
+    <label for="node-input-client"><i class="icon-tag"></i> Client</label>
+    <input type="text" id="node-input-client" placeholder="Client">
+  </div>
+  <div class="form-row">
+    <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+    <input type="text" id="node-input-name" placeholder="Name">
+  </div>
+</script>
+
+<script type="text/x-red" data-help-name="diameter-client-request">
+  <p>Send Diameter Request</p>
+</script>
