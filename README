@@ -1,3 +1,7 @@
 node-red-contrib-diameter
 ===========
 
+Позволяет организовать DIAMETER Server и Client, входящие и исходящие сообщения проходят черех Input и Output.
+Diameter Watchdogs ходят внутри ноды. 
+
+Побробное описание будет предоставлено позже.
